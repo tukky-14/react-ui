@@ -7,6 +7,9 @@ function Home() {
             <Link to="/card-grid" className="text-xl text-blue-600 hover:underline">
                 CardGrid
             </Link>
+            <Link to="/teams" className="text-xl text-blue-600 hover:underline">
+                Teams
+            </Link>
             <Link to="/data-grid" className="text-xl text-blue-600 hover:underline">
                 DataGrid
             </Link>
