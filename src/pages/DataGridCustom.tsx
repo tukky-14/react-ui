@@ -1,16 +1,26 @@
-import { DataGrid, GridColDef, GridValueGetterParams, GridToolbar, jaJP } from '@mui/x-data-grid';
+import {
+    DataGrid,
+    GridColDef,
+    GridValueGetterParams,
+    GridToolbar,
+    jaJP,
+    GridCellParams,
+} from '@mui/x-data-grid';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const columns: GridColDef[] = [
     {
-        field: 'button',
+        field: 'icon',
         headerName: '',
         width: 60,
         align: 'center',
         renderCell: (params) => (
-            <span className="text-blue-600">
+            <button
+                className="text-blue-600 hover:cursor-pointer"
+                onClick={() => handleClickIcon(params)}
+            >
                 <AccountCircleIcon />
-            </span>
+            </button>
         ),
     },
     { field: 'id', headerName: 'ID', width: 60 },
@@ -196,7 +206,7 @@ const rows = [
 const styles = {
     grid: {
         '.MuiDataGrid-toolbarContainer': {
-            borderBottom: 'solid 1px rgba(224, 224, 224, 1)', // ついでにツールバーの下に罫線を引く
+            borderBottom: 'solid 1px rgba(224, 224, 224, 1)',
         },
         '.MuiDataGrid-row .MuiDataGrid-cell:not(:last-child)': {
             borderRight: 'solid 1px rgba(224, 224, 224, 1) !important',
@@ -206,6 +216,12 @@ const styles = {
             backgroundColor: '#e0f2fe',
         },
     },
+};
+
+const handleClickIcon = (params: GridCellParams) => {
+    const row = params.row;
+    const values = Object.keys(row).map((key) => `${key}: ${row[key]}`);
+    alert(values.join('\n'));
 };
 
 export default function DataGridCustom() {
@@ -222,7 +238,7 @@ export default function DataGridCustom() {
                         },
                     },
                 }}
-                pageSizeOptions={[5]}
+                pageSizeOptions={[10, 20, 50]}
                 checkboxSelection
                 disableRowSelectionOnClick
                 components={{
