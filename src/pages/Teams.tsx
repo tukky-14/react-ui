@@ -20,7 +20,7 @@ const Teams = () => {
                             <img
                                 src="https://images.unsplash.com/photo-1567515004624-219c11d31f2e??auto=format&q=75&fit=crop&w=256"
                                 loading="lazy"
-                                alt="Photo by Radu Florin"
+                                alt="Radu Florin"
                                 className="h-full w-full object-cover object-center"
                             />
                         </div>
@@ -77,7 +77,7 @@ const Teams = () => {
                             <img
                                 src="https://images.unsplash.com/photo-1532073150508-0c1df022bdd1?auto=format&q=75&fit=crop&w=256"
                                 loading="lazy"
-                                alt="Photo by christian ferrer"
+                                alt="christian ferrer"
                                 className="h-full w-full object-cover object-center"
                             />
                         </div>
@@ -135,7 +135,7 @@ const Teams = () => {
                             <img
                                 src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&q=75&fit=crop&w=256"
                                 loading="lazy"
-                                alt="Photo by Ayo Ogunseinde"
+                                alt="Ayo Ogunseinde"
                                 className="h-full w-full object-cover object-center"
                             />
                         </div>
@@ -193,7 +193,7 @@ const Teams = () => {
                             <img
                                 src="https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?auto=format&q=75&fit=crop&w=256"
                                 loading="lazy"
-                                alt="Photo by Midas Hofstra"
+                                alt="Midas Hofstra"
                                 className="h-full w-full object-cover object-center"
                             />
                         </div>
@@ -251,7 +251,7 @@ const Teams = () => {
                             <img
                                 src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?auto=format&q=75&fit=crop&w=256"
                                 loading="lazy"
-                                alt="Photo by Elizeu Dias"
+                                alt="Elizeu Dias"
                                 className="h-full w-full object-cover object-center"
                             />
                         </div>
@@ -309,7 +309,7 @@ const Teams = () => {
                             <img
                                 src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&q=75&fit=crop&w=256"
                                 loading="lazy"
-                                alt="Photo by Matheus Ferrero"
+                                alt="Matheus Ferrero"
                                 className="h-full w-full object-cover object-center"
                             />
                         </div>
@@ -367,7 +367,7 @@ const Teams = () => {
                             <img
                                 src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&q=75&fit=crop&w=256"
                                 loading="lazy"
-                                alt="Photo by Leilani Angel"
+                                alt="Leilani Angel"
                                 className="h-full w-full object-cover object-center"
                             />
                         </div>
@@ -425,7 +425,7 @@ const Teams = () => {
                             <img
                                 src="https://images.unsplash.com/photo-1562904403-a5106bef8319?auto=format&q=75&fit=crop&w=256"
                                 loading="lazy"
-                                alt="Photo by Jernej Graj"
+                                alt="Jernej Graj"
                                 className="h-full w-full object-cover object-center"
                             />
                         </div>
