@@ -6,6 +6,7 @@ import CardGrid from './pages/CardGrid';
 import DataGrid from './pages/DataGrid';
 import DataGridCustom from './pages/DataGridCustom';
 import Teams from './pages/Teams';
+import NotFound from './pages/NotFound';
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/teams" element={<Teams />} />
                 <Route path="/data-grid" element={<DataGrid />} />
                 <Route path="/data-grid-custom" element={<DataGridCustom />} />
+                <Route path="*" element={<NotFound />} />
             </Routes>
         </BrowserRouter>
     );
