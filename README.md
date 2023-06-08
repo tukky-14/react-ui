@@ -8,3 +8,7 @@
 -   [Kitwind](https://kitwind.io/products/kometa/components/)
 -   [Tailwind UI KIT](https://www.tailwind-kit.com/components)
 -   [Meraki UI Components](https://merakiui.com/components/)
+-   [Tail-kit](https://www.tailwind-kit.com/)
+-   [Wickedblocks](https://wickedblocks.dev/)
+-   [daisyUI](https://daisyui.com/)
+-   [TailwindCSS Buttons](https://devdojo.com/tailwindcss/buttons)
