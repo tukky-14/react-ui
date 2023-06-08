@@ -7,6 +7,9 @@ function Home() {
             <Link to="/card-grid" className="text-xl text-blue-600 hover:underline">
                 CardGrid
             </Link>
+            <Link to="/content1" className="text-xl text-blue-600 hover:underline">
+                Content1
+            </Link>
             <Link to="/teams" className="text-xl text-blue-600 hover:underline">
                 Teams
             </Link>
