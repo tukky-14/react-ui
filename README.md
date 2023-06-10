@@ -1,4 +1,4 @@
-### React × TailwindCSS のお試し UI
+### React × TailwindCSS UI
 
 -   [TailwindCSS](https://tailwindcss.com/docs/installation)
 -   [Flowbite - Tailwind CSS component library](https://flowbite.com/docs/getting-started/introduction/)
@@ -10,5 +10,4 @@
 -   [Meraki UI Components](https://merakiui.com/components/)
 -   [Tail-kit](https://www.tailwind-kit.com/)
 -   [Wickedblocks](https://wickedblocks.dev/)
--   [daisyUI](https://daisyui.com/)
 -   [TailwindCSS Buttons](https://devdojo.com/tailwindcss/buttons)
