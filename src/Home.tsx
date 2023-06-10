@@ -10,6 +10,9 @@ function Home() {
             <Link to="/content1" className="text-xl text-blue-600 hover:underline">
                 Content1
             </Link>
+            <Link to="/gallery" className="text-xl text-blue-600 hover:underline">
+                Gallery
+            </Link>
             <Link to="/teams" className="text-xl text-blue-600 hover:underline">
                 Teams
             </Link>
