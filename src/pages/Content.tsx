@@ -1,5 +1,5 @@
 // https://tailblocks.cc/
-const Content1 = () => {
+const Content = () => {
     return (
         <section className="max-w-screen-xl mx-auto text-gray-600 body-font">
             <div className="container px-5 py-24 mx-auto">
@@ -169,4 +169,4 @@ const Content1 = () => {
     );
 };
 
-export default Content1;
+export default Content;
