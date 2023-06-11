@@ -16,6 +16,9 @@ function Home() {
             <Link to="/teams" className="text-xl text-blue-600 hover:underline">
                 Teams
             </Link>
+            <Link to="/teams2" className="text-xl text-blue-600 hover:underline">
+                Teams2
+            </Link>
             <Link to="/data-grid" className="text-xl text-blue-600 hover:underline">
                 DataGrid
             </Link>

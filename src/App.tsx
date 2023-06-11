@@ -6,6 +6,7 @@ import CardGrid from './pages/CardGrid';
 import DataGrid from './pages/DataGrid';
 import DataGridCustom from './pages/DataGridCustom';
 import Teams from './pages/Teams';
+import Teams2 from './pages/Teams2';
 import NotFound from './pages/NotFound';
 import Content from './pages/Content';
 import Gallery from './pages/Gallery';
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/content" element={<Content />} />
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/teams" element={<Teams />} />
+                <Route path="/teams2" element={<Teams2 />} />
                 <Route path="/data-grid" element={<DataGrid />} />
                 <Route path="/data-grid-custom" element={<DataGridCustom />} />
                 <Route path="*" element={<NotFound />} />
