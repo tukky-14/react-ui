@@ -25,6 +25,9 @@ function Home() {
             <Link to="/data-grid-custom" className="text-xl text-blue-600 hover:underline">
                 DataGrid Custom
             </Link>
+            <Link to="/dashboard" className="text-xl text-blue-600 hover:underline">
+                Dashboard
+            </Link>
         </div>
     );
 }

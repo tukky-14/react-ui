@@ -10,6 +10,7 @@ import Teams2 from './pages/Teams2';
 import NotFound from './pages/NotFound';
 import Content from './pages/Content';
 import Gallery from './pages/Gallery';
+import Dashboard from './pages/Dashboard';
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/teams2" element={<Teams2 />} />
                 <Route path="/data-grid" element={<DataGrid />} />
                 <Route path="/data-grid-custom" element={<DataGridCustom />} />
+                <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </BrowserRouter>
