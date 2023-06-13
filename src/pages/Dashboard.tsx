@@ -1,4 +1,4 @@
-import React from 'react';
+// https://www.tailwind-kit.com/templates/datadashboard
 import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
