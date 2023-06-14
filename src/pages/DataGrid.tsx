@@ -1,5 +1,12 @@
 // https://mui.com/x/react-data-grid/
-import { DataGrid, GridColDef, GridValueGetterParams, GridToolbar, jaJP } from '@mui/x-data-grid';
+import {
+    DataGrid,
+    GridColDef,
+    GridValueGetterParams,
+    GridToolbar,
+    jaJP,
+    GridRowParams,
+} from '@mui/x-data-grid';
 
 const columns: GridColDef[] = [
     { field: 'id', headerName: 'ID', width: 90 },
@@ -46,6 +53,10 @@ const rows = [
 ];
 
 export default function _DataGrid() {
+    const handleRowClick = (param: GridRowParams) => {
+        alert(`行が選択されました: ${param.row.firstName} ${param.row.lastName}`);
+    };
+
     return (
         <div className="max-w-screen-xl mx-auto p-4">
             <DataGrid
@@ -61,8 +72,9 @@ export default function _DataGrid() {
                 pageSizeOptions={[5]}
                 checkboxSelection
                 disableRowSelectionOnClick
+                onRowClick={handleRowClick}
                 components={{
-                    Toolbar: GridToolbar, // ツールバーを指定する
+                    Toolbar: GridToolbar,
                 }}
                 localeText={jaJP.components.MuiDataGrid.defaultProps.localeText}
             />
