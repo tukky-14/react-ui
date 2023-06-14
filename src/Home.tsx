@@ -10,15 +10,6 @@ function Home() {
             <Link to="/content" className="text-xl text-blue-600 hover:underline">
                 Content
             </Link>
-            <Link to="/gallery" className="text-xl text-blue-600 hover:underline">
-                Gallery
-            </Link>
-            <Link to="/teams" className="text-xl text-blue-600 hover:underline">
-                Teams
-            </Link>
-            <Link to="/teams2" className="text-xl text-blue-600 hover:underline">
-                Teams2
-            </Link>
             <Link to="/data-grid" className="text-xl text-blue-600 hover:underline">
                 DataGrid
             </Link>
@@ -27,6 +18,18 @@ function Home() {
             </Link>
             <Link to="/dashboard" className="text-xl text-blue-600 hover:underline">
                 Dashboard
+            </Link>
+            <Link to="/faq" className="text-xl text-blue-600 hover:underline">
+                FAQ
+            </Link>
+            <Link to="/gallery" className="text-xl text-blue-600 hover:underline">
+                Gallery
+            </Link>
+            <Link to="/teams" className="text-xl text-blue-600 hover:underline">
+                Teams
+            </Link>
+            <Link to="/teams2" className="text-xl text-blue-600 hover:underline">
+                Teams2
             </Link>
         </div>
     );

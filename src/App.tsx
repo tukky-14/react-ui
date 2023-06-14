@@ -11,6 +11,7 @@ import NotFound from './pages/NotFound';
 import Content from './pages/Content';
 import Gallery from './pages/Gallery';
 import Dashboard from './pages/Dashboard';
+import Faq from './pages/Faq';
 
 function App() {
     return (
@@ -20,12 +21,13 @@ function App() {
                 <Route index path="" element={<Home />} />
                 <Route path="/card-grid" element={<CardGrid />} />
                 <Route path="/content" element={<Content />} />
-                <Route path="/gallery" element={<Gallery />} />
-                <Route path="/teams" element={<Teams />} />
-                <Route path="/teams2" element={<Teams2 />} />
                 <Route path="/data-grid" element={<DataGrid />} />
                 <Route path="/data-grid-custom" element={<DataGridCustom />} />
                 <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/faq" element={<Faq />} />
+                <Route path="/gallery" element={<Gallery />} />
+                <Route path="/teams" element={<Teams />} />
+                <Route path="/teams2" element={<Teams2 />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </BrowserRouter>
