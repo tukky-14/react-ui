@@ -7,6 +7,7 @@ import {
     jaJP,
     GridRowParams,
 } from '@mui/x-data-grid';
+import { useNavigate } from 'react-router-dom';
 
 const columns: GridColDef[] = [
     { field: 'id', headerName: 'ID', width: 90 },
@@ -53,8 +54,13 @@ const rows = [
 ];
 
 export default function _DataGrid() {
+    const navigate = useNavigate();
+
     const handleRowClick = (param: GridRowParams) => {
+        console.log('param.row:', param.row);
         alert(`行が選択されました: ${param.row.firstName} ${param.row.lastName}`);
+        // ホーム画面に遷移
+        navigate('/');
     };
 
     return (
