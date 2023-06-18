@@ -13,6 +13,7 @@ import Gallery from './pages/Gallery';
 import Dashboard from './pages/Dashboard';
 import Faq from './pages/Faq';
 import { Pricing } from './pages/Pricing';
+import KBD from './pages/KBD';
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/faq" element={<Faq />} />
                 <Route path="/gallery" element={<Gallery />} />
+                <Route path="/kbd" element={<KBD />} />
                 <Route path="/pricing" element={<Pricing />} />
                 <Route path="/teams" element={<Teams />} />
                 <Route path="/teams2" element={<Teams2 />} />
