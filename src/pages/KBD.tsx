@@ -1,3 +1,5 @@
+// https://flowbite.com/docs/components/kbd/
+
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 const fns = ['F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'F10', 'F11', 'F12'];
 const kanas = ['ア行', 'カ行', 'サ行', 'タ行', 'ナ行', 'ハ行', 'マ行', 'ヤ行', 'ラ行', 'ワ行'];
@@ -9,7 +11,7 @@ const symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '='
 
 const KBD = () => {
     return (
-        <div className="max-w-screen-xl mx-auto flex flex-col gap-10 pt-10">
+        <div className="max-w-screen-xl mx-auto flex flex-col gap-10 p-4">
             <div>
                 {numbers.map((number) => (
                     <button className="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 hover:bg-gray-300 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 select-none">
