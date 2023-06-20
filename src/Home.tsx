@@ -4,6 +4,9 @@ import './App.css';
 function Home() {
     return (
         <div className="max-w-screen-xl mx-auto p-4 flex flex-col gap-2">
+            <Link to="/blog" className="text-xl text-blue-600 hover:underline">
+                Blog
+            </Link>
             <Link to="/card-grid" className="text-xl text-blue-600 hover:underline">
                 CardGrid
             </Link>

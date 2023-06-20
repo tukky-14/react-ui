@@ -14,6 +14,7 @@ import Dashboard from './pages/Dashboard';
 import Faq from './pages/Faq';
 import { Pricing } from './pages/Pricing';
 import KBD from './pages/KBD';
+import Blog from './pages/Blog';
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
             <Header />
             <Routes>
                 <Route index path="" element={<Home />} />
+                <Route path="/blog" element={<Blog />} />
                 <Route path="/card-grid" element={<CardGrid />} />
                 <Route path="/content" element={<Content />} />
                 <Route path="/data-grid" element={<DataGrid />} />
