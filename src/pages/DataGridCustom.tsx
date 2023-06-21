@@ -9,6 +9,7 @@ import {
 } from '@mui/x-data-grid';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import GridCustomToolbar from '../components/GridCustomToolbar';
+import { useState } from 'react';
 
 const columns: GridColDef[] = [
     {
@@ -58,6 +59,22 @@ const columns: GridColDef[] = [
         field: 'remarks',
         headerName: 'Remarks',
         flex: 1,
+        editable: true,
+    },
+];
+
+const columns2: GridColDef[] = [
+    { field: 'id', headerName: 'ID', width: 60 },
+    {
+        field: 'firstName',
+        headerName: 'First name',
+        width: 150,
+        editable: true,
+    },
+    {
+        field: 'lastName',
+        headerName: 'Last name',
+        width: 150,
         editable: true,
     },
 ];
@@ -227,12 +244,24 @@ const handleClickIcon = (params: GridCellParams) => {
 };
 
 export default function DataGridCustom() {
+    const [isColums2, setIsColums2] = useState<boolean>(false);
+    const [selectColumns, setSelectColumns] = useState<GridColDef[]>(columns);
+
+    const handleTableChangeClick = () => {
+        if (!isColums2) {
+            setSelectColumns(columns2);
+        } else {
+            setSelectColumns(columns);
+        }
+        setIsColums2(!isColums2);
+    };
+
     return (
         <div className="max-w-screen-xl mx-auto p-4 overflow-scroll">
             <DataGrid
                 sx={styles.grid}
                 rows={rows}
-                columns={columns}
+                columns={selectColumns}
                 initialState={{
                     pagination: {
                         paginationModel: {
@@ -244,7 +273,9 @@ export default function DataGridCustom() {
                 checkboxSelection
                 disableRowSelectionOnClick
                 components={{
-                    Toolbar: () => <GridCustomToolbar />,
+                    Toolbar: () => (
+                        <GridCustomToolbar handleTableChangeClick={handleTableChangeClick} />
+                    ),
                 }}
                 localeText={jaJP.components.MuiDataGrid.defaultProps.localeText}
             />
