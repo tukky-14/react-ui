@@ -8,6 +8,7 @@ import {
     GridCellParams,
 } from '@mui/x-data-grid';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import GridCustomToolbar from '../components/GridCustomToolbar';
 
 const columns: GridColDef[] = [
     {
@@ -243,7 +244,7 @@ export default function DataGridCustom() {
                 checkboxSelection
                 disableRowSelectionOnClick
                 components={{
-                    Toolbar: GridToolbar, // ツールバーを指定する
+                    Toolbar: () => <GridCustomToolbar />,
                 }}
                 localeText={jaJP.components.MuiDataGrid.defaultProps.localeText}
             />
