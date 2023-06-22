@@ -25,6 +25,9 @@ function Home() {
             <Link to="/faq" className="text-xl text-blue-600 hover:underline">
                 FAQ
             </Link>
+            <Link to="/login" className="text-xl text-blue-600 hover:underline">
+                Login
+            </Link>
             <Link to="/gallery" className="text-xl text-blue-600 hover:underline">
                 Gallery
             </Link>

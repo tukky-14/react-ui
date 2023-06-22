@@ -12,6 +12,7 @@ import Content from './pages/Content';
 import Gallery from './pages/Gallery';
 import Dashboard from './pages/Dashboard';
 import Faq from './pages/Faq';
+import Login from './pages/Login';
 import { Pricing } from './pages/Pricing';
 import KBD from './pages/KBD';
 import Blog from './pages/Blog';
@@ -29,6 +30,7 @@ function App() {
                 <Route path="/data-grid-custom" element={<DataGridCustom />} />
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/faq" element={<Faq />} />
+                <Route path="/login" element={<Login />} />
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/kbd" element={<KBD />} />
                 <Route path="/pricing" element={<Pricing />} />
