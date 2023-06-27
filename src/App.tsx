@@ -16,6 +16,7 @@ import Login from './pages/Login';
 import { Pricing } from './pages/Pricing';
 import KBD from './pages/KBD';
 import Blog from './pages/Blog';
+import Stats from './pages/Stats';
 
 function App() {
     return (
@@ -34,6 +35,7 @@ function App() {
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/kbd" element={<KBD />} />
                 <Route path="/pricing" element={<Pricing />} />
+                <Route path="/stats" element={<Stats />} />
                 <Route path="/teams" element={<Teams />} />
                 <Route path="/teams2" element={<Teams2 />} />
                 <Route path="*" element={<NotFound />} />

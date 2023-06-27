@@ -37,6 +37,9 @@ function Home() {
             <Link to="/pricing" className="text-xl text-blue-600 hover:underline">
                 Pricing
             </Link>
+            <Link to="/stats" className="text-xl text-blue-600 hover:underline">
+                Stats
+            </Link>
             <Link to="/teams" className="text-xl text-blue-600 hover:underline">
                 Teams
             </Link>
